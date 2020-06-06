@@ -36,6 +36,7 @@ jobs:
 
   run-windows-commands:
     runs-on: windows-latest
+    needs: ['build']
     steps:
       - name: Directory PowerShell
         run: Get-Location
