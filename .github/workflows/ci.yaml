@@ -28,3 +28,9 @@ jobs:
           echo Add other actions to build,
           echo test, and deploy your project - second time.
 
+      - name: Python Command
+        run: |
+          import platform
+          print(platform.processor())
+        shell: python
+
